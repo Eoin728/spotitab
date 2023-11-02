@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7h-sf11bobempjd8x3tfec*qr8lrk!7jt^13cu&ihe(b@c(u18
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tabulate.pythonanywhere.com']
 
 
 # Application definition
