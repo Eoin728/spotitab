@@ -18,7 +18,7 @@ REDIRECT_URI= os.getenv('REDIRECT_URI')
 #DIFFICULTY = os.getenv('DIFFICULTY')
 CLIENT_ID = "2badb84df9ff47749c2966958c4163fa"
 CLIENT_SECRET = "8d99591962884856b8d7377acedfd433"
-REDIRECT_URI= "http://127.0.0.1:8000/api/redirect"
+REDIRECT_URI= "http://tabulate.pythonanywhere.com/api/redirect"
 
 
 BASE_URL = "https://api.spotify.com/v1/me/"
