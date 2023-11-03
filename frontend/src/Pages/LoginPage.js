@@ -42,13 +42,12 @@ const LoginPage = () => {
     }
 
    
-    let handlespotify = () =>
+    let handlespotify = async () =>
     {
-console.log(difficultytext !== 'Select Difficulty')
         if (difficultytext !== 'Select Difficulty')
             { 
                
-                fetch(`https://spotitab.onrender.com/api/create/`, {
+                await fetch(`https://spotitab.onrender.com/api/create/`, {
                 method: "POST",
                
                 headers: {
