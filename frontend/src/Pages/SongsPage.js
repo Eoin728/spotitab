@@ -39,7 +39,7 @@ if (tabs.length === 0)
 
  
 }
-
+console.log(tabs.length())
 //gonna provide listrs of artists i think bcos artists based website
   return (
     <div >
