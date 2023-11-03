@@ -43,7 +43,8 @@ const LoginPage = () => {
         if (difficultytext !== 'Select Difficulty')
             { 
                
-                await fetch(`https://spotitab.onrender.com/api/create/`, {
+              //  await fetch(`https://spotitab.onrender.com/api/create/`, {
+                await fetch(`http://127.0.0.1:8000/api/create/`, {
                 method: "POST",
                
                 headers: {
