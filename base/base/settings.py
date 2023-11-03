@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = os.getenv('DEBUG', '0').lower() in ['true', 't', '1']
 
 
-CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS').split(' ')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 
