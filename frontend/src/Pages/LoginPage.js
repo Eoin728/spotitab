@@ -21,7 +21,7 @@ const LoginPage = () => {
 
  // var difficultytext = "Choose difficulty"
   let AuthSpotify = () => {
-    console.log("penis");
+  
         fetch('https://spotitab.onrender.com/api/get-auth').then((response) => response.json()).then((data) =>
          window.location.replace(data.url));
 
