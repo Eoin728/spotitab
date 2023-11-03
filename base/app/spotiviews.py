@@ -14,11 +14,9 @@ load_dotenv(dotenv_path)
 
 CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
-#REDIRECT_URI= os.getenv('REDIRECT_URI')
-#DIFFICULTY = os.getenv('DIFFICULTY')
+REDIRECT_URI= os.getenv('REDIRECT_URI')
 
-CLIENT_SECRET = "c11ac215f5934820a62507282ffa9d01"
-REDIRECT_URI= "https://spotitab.onrender.com/api/redirect"
+
 
 
 BASE_URL = "https://api.spotify.com/v1/me/"
