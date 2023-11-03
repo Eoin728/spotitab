@@ -46,7 +46,7 @@ if (tabs.length === 0)
   <AppBar position="fixed" elevation={6}sx={{ paddingTop: 1,
   paddingBottom: 2, bgcolor: "black" }}>
         <Toolbar  sx={{ justifyContent: 'center'}}>
-          <Link to ={'http://localhost:3000/'} style={{ textDecoration: 'none' }}>
+          <Link to ={'https://spotitab-ii4y.onrender.com/'} style={{ textDecoration: 'none' }}>
           <Typography variant = 'h3' style = {{ fontFamily:'Cursize'}} color = 'white'>SPOTITAB</Typography>
           </Link>
         </Toolbar>
