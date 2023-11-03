@@ -16,7 +16,7 @@ CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 #REDIRECT_URI= os.getenv('REDIRECT_URI')
 #DIFFICULTY = os.getenv('DIFFICULTY')
-CLIENT_ID = "88f9e35f9d3745da848f74736b94fc31"
+
 CLIENT_SECRET = "c11ac215f5934820a62507282ffa9d01"
 REDIRECT_URI= "https://spotitab.onrender.com/api/redirect"
 
