@@ -57,7 +57,7 @@ const LoginPage = () => {
                'difficulty':difficultytext[0],
                'usertype': "spotify"
              } )});
-             AuthSpotify(); 
+            await AuthSpotify(); 
 
           
             }
