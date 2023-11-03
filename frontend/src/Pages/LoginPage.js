@@ -33,10 +33,7 @@ const LoginPage = () => {
     let SetDifficulty = (diff) =>
     {
       
-        //console.log(difficulty);
-    
-
-        //this is actually retarded
+      
        
                setdifficultytext(diff);
               
