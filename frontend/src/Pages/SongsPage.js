@@ -18,19 +18,19 @@ const SongsPage = () => {
     let [tabs,setTabs] = useState([])
 
     useEffect(() => {
-   
+      let getTabs = async () => {
+      
+        let response =  await fetch('https://spotitab.onrender.com/api/songs/')
+         let data = await response.json()
+         shuffleArray(data)
+         setTabs(data)
+ 
+     }
         getTabs()
 
     },[])
     
-    let getTabs = async () => {
-      
-       let response =  await fetch('https://spotitab.onrender.com/api/songs/')
-        let data = await response.json()
-        shuffleArray(data)
-        setTabs(data)
-
-    }
+ 
 
     var isnull = false;
 if (tabs.length === 0)

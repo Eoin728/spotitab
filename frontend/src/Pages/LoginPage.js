@@ -28,11 +28,6 @@ const LoginPage = () => {
 
     }
 
-    var difficultyselected = false;
-    let AllowProgress = () =>{
-        difficultyselected = true;
-    }
-
   
 
     let SetDifficulty = (diff) =>
@@ -53,7 +48,7 @@ const LoginPage = () => {
     let handlespotify = () =>
     {
 console.log(difficultytext !== 'Select Difficulty')
-        if (difficultytext != 'Select Difficulty')
+        if (difficultytext !== 'Select Difficulty')
             { 
                
                 fetch(`https://spotitab.onrender.com/api/create/`, {
@@ -87,7 +82,6 @@ console.log(difficultytext !== 'Select Difficulty')
               navigate("/songs");
     }
     }
-
     let openmenu = () =>
     {
         setIsOpen(true);
@@ -117,7 +111,7 @@ console.log(difficultytext !== 'Select Difficulty')
 
         <Dropdown open = {isopen}>
       <MenuButton  variant = 'soft' color = 'neutral'endDecorator = {<KeyboardArrowDownIcon/>}   style = {{ borderRadius: 80 }} onClick = {openmenu} ><Typography style = {{ fontFamily:'Monospace'}}>{difficultytext} </Typography></MenuButton>
-      <Menu onClick = {AllowProgress} style = {{ borderRadius: 10,  opacity: 0.8}} >
+      <Menu  style = {{ borderRadius: 10,  opacity: 0.8}} >
         <MenuItem  style ={{ justifyContent:'center'}}  onClick = {() => SetDifficulty('Beginner')}> <Typography  style = {{fontFamily:'Monospace'}}>Beginner </Typography></MenuItem>
         <Divider/>
        < MenuItem style ={{ justifyContent:'center'}}  onClick = {() => SetDifficulty('Intermediate')} > <Typography style = {{ fontFamily:'Monospace'}}>Intermediate </Typography></MenuItem>
