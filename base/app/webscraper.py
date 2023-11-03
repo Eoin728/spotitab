@@ -19,12 +19,12 @@ def GetTabs(artistname,diff):
     
     orig = 'https://www.songsterr.com/api/songs?size=20&pattern='
     diffint = 0
-    if (diff == 'A'):
+    if diff == 'A':
         diffint = 2
+    elif diff == 'I':
+        diffint = 1
     elif diff == 'B':
         diffint = 0
-    else:
-        diffint = 1
 
     search = orig + artistname + '&difficulty=' + str(diffint)
     html = requests.get(search)
