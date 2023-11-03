@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-=cldztbc4jg&xl0!x673!*v2_=p$$eu)=7*f#d0#zs$44xx-h^
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','http://127.0.0.1:8000']
 
 
 # Application definition
@@ -90,7 +90,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'spotitab-postgres', 
-        'USER': 'verceldb',
+        'USER': 'default',
         'PASSWORD': 'aXI7YRo0xsDT',
         'HOST': 'ep-tight-feather-57606186-pooler.eu-central-1.postgres.vercel-storage.com', 
          'PORT': '5432',
