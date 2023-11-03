@@ -61,7 +61,7 @@ def callback(request,format = None):
     
  
 
-    return redirect('https://spotitab-ii4y.onrender.com/')
+    return redirect('https://spotitab-ii4y.onrender.com/songs')
     
 def GetTopArtists(start,end):
     headers = {'Content-Type': 'application/json',
