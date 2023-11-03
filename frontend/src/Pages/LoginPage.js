@@ -38,7 +38,7 @@ const LoginPage = () => {
                setdifficultytext(diff);
               
         setIsOpen(false);
-        console.log(difficultytext)
+     
     }
 
    
@@ -46,7 +46,7 @@ const LoginPage = () => {
     {
         if (difficultytext !== 'Select Difficulty')
             { 
-               console.log([difficultytext[0]);
+               console.log([difficultytext[0])
                 await fetch(`https://spotitab.onrender.com/api/create/`, {
                 method: "POST",
                
