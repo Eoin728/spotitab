@@ -20,9 +20,9 @@ const LoginPage = () => {
   
 
  // var difficultytext = "Choose difficulty"
-  let AuthSpotify = () => {
+ let AuthSpotify = () => {
   
-         fetch('https://spotitab.onrender.com/api/get-auth').then((response) => response.json()).then((data) =>
+        fetch('https://spotitab.onrender.com/api/get-auth').then((response) => response.json()).then((data) =>
          window.location.replace(data.url));
 
 
@@ -52,10 +52,8 @@ const LoginPage = () => {
                 body:JSON.stringify({
                'difficulty':difficultytext[0],
                'usertype': "spotify"
-             } )}).then(
-            await AuthSpotify(); )
-
-          
+             } )}).then( () =>{
+            await AuthSpotify(); })
             }
     }
 
