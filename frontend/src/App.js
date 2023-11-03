@@ -1,5 +1,5 @@
 import LoginPage from './Pages/LoginPage';
-
+import SongsPage from './Pages/SongsPage';
 import './App.css';
 import { BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 
@@ -17,7 +17,7 @@ function App() {
       <Routes>
      
       <Route path = "/" exact element = { <LoginPage/> } />
-  
+      <Route path = "/songs"  element = {  <SongsPage/>} />
       </Routes>
   
     </Router>
@@ -26,3 +26,7 @@ function App() {
 }
 
 export default App;
+
+/*
+
+*/
