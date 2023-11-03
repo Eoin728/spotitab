@@ -57,9 +57,11 @@ if (tabs.length === 0)
 
 
 <List sx = {{backgroundColor:'#263238'}} >
-
+{tabs.map((song,index) =>(
+               <Tab song = {song} />
+            )
             
-            
+            )}
         
         </List>
 }
