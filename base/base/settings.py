@@ -87,17 +87,16 @@ WSGI_APPLICATION = 'base.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'spotitab-postgres', 
-        'USER': 'default',
-        'PASSWORD': 'aXI7YRo0xsDT',
-        'HOST': 'ep-tight-feather-57606186-pooler.eu-central-1.postgres.vercel-storage.com', 
-         'PORT': '5432',
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'spotitab',
+    'USER': 'gobshiet@gmail.com',
+    'PASSWORD': '0xah3NeoVvzW',
+    'HOST': 'ep-rapid-art-16426551.eu-central-1.aws.neon.tech',
+    'PORT': '5432',
+    'OPTIONS': {'sslmode': 'require'},
+  }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
