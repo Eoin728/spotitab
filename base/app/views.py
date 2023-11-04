@@ -10,21 +10,21 @@ from rest_framework.response import Response
 
 
 global usertype
-DIFFICULTY = "none"
+
 class CreateUser(APIView):
     def post(self,request):
         data = request.body
         data = json.loads(data)
       
 
-        DIFFICULTY = data['difficulty']
+        os.environ["DIFFICULTY"] = data['difficulty']
         if data['usertype'] == 'spotify' or data['usertype'] == 'dummy':
             usertype = data['usertype']
             Song.objects.all().delete()
             
             if (usertype != 'spotify'):
                 artists = ["metallica","mitski","kanye west","beyonce","steve vai"]
-                CreateTabs(artists,False, DIFFICULTY)
+                CreateTabs(artists,False, os.environ["DIFFICULTY"])
                 
 
         return Response(status = status.HTTP_200_OK)
