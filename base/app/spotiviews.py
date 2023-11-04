@@ -7,7 +7,7 @@ from .webscraper import CreateTabs
 from .models import Song
 import os
 from dotenv import find_dotenv,load_dotenv
-from .views import DIFFICULTY
+
 
 dotenv_path = find_dotenv()
 load_dotenv(dotenv_path)
@@ -47,7 +47,7 @@ def callback(request,format = None):
                     ).json()
     
     access_token = response.get('access_token')
- 
+    DIFFICULTY = os.environ["DIFFICULTY"]
     global ACCESS_TOKEN
     ACCESS_TOKEN = access_token
 
