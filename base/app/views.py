@@ -7,7 +7,12 @@ from .serializers import SongSerializer
 import json
 from rest_framework import status
 from rest_framework.response import Response
+import os
+from dotenv import find_dotenv,load_dotenv
 
+
+dotenv_path = find_dotenv()
+load_dotenv(dotenv_path)
 
 global usertype
 
