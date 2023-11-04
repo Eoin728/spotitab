@@ -22,10 +22,8 @@ const LoginPage = () => {
  // var difficultytext = "Choose difficulty"
  let AuthSpotify = () => {
   
-        fetch('http://127.0.0.1:8000/api/get-auth').then((response) => response.json()).then((data) =>
+        fetch('https://spotitab.onrender.com/api/get-auth').then((response) => response.json()).then((data) =>
          window.location.replace(data.url));
-
-
     }
 
   
@@ -43,7 +41,7 @@ const LoginPage = () => {
         if (difficultytext !== 'Select Difficulty')
             { 
                
-                await fetch(`http://127.0.0.1:8000/api/create/`, {
+                await fetch(`https://spotitab.onrender.com/api/create/`, {
              
                 method: "POST",
                
@@ -61,7 +59,7 @@ const LoginPage = () => {
     let handleother = async () =>{
        
         if (difficultytext !== 'Select Difficulty'){
-       await fetch(`http://127.0.0.1:8000/api/create/`, {
+       await fetch(`https://spotitab.onrender.com/api/create/`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
